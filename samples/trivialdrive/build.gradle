@@ -7,10 +7,10 @@ android {
     defaultConfig {
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
-        versionCode 14
-        versionName '1.0'
+        versionCode 20
+        versionName '0.9.8'
 
-        applicationId 'org.onepf.trivialdrivegame'
+        applicationId 'org.onepf.sample.trivialdrive'
     }
 
     signingConfigs {
@@ -24,8 +24,6 @@ android {
 
     buildTypes {
         release {
-            runProguard false
-            proguardFiles 'proguard-project.txt'
             signingConfig signingConfigs.release
         }
     }
@@ -42,4 +40,5 @@ android {
 
 dependencies {
     compile project(':OpenIab Library')
+//    compile 'org.onepf:openiab:0.9.8'
 }
